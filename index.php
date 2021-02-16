@@ -18,8 +18,8 @@ náhodných slov tvořících věty... a tak vůbec.<br></h3>
 <?php
 if (isset($a))
 {
-  $a=rand(1,10); //První věta (a+b)
-  $b=rand(11,15);
+  $a=rand(0,19); //První věta (a+b)
+  $b=rand(10,14);
   $c=array(
     "Život je jako bonboniéra",
     "Někdy mám pocit, že se svět zbláznil, pak přijde ona a všechno je v pohodě",
@@ -37,7 +37,7 @@ if (isset($a))
     ", někdy to tak prostě musí být. ",
     ", ale přemíšlím o dobrovolné eutanázii. ",
     );
-  $ab=$a.$b;
+  $ab=$c[$a].$c[$b];
   echo '<textarea columns="20" rows="10">'.$ab.'</textarea>';
 }
 else $a=1;
